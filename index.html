@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meghanath V Pramod | Photography Portfolio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f0f14;
+      color: #ffffff;
+      line-height: 1.6;
+    }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      background: radial-gradient(circle at top, #1f1f2e, #0f0f14);
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      margin-top: 15px;
+      font-size: 1.1rem;
+      color: #b3b3ff;
+    }
+
+    section {
+      padding: 80px 8%;
+    }
+
+    .section-title {
+      font-size: 2.2rem;
+      margin-bottom: 40px;
+      position: relative;
+      display: inline-block;
+    }
+
+    .section-title::after {
+      content: '';
+      width: 60%;
+      height: 3px;
+      background: linear-gradient(90deg, #7f5cff, #00d4ff);
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+    }
+
+    .about p {
+      max-width: 850px;
+      color: #ddd;
+      font-size: 1.05rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .photo-card {
+      position: relative;
+      overflow: hidden;
+      border-radius: 16px;
+      cursor: pointer;
+    }
+
+    .photo-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s ease;
+    }
+
+    .photo-card:hover img {
+      transform: scale(1.1);
+    }
+
+    .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.75), transparent);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      display: flex;
+      align-items: flex-end;
+      padding: 20px;
+    }
+
+    .photo-card:hover .overlay {
+      opacity: 1;
+    }
+
+    .overlay span {
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    .portfolio-link {
+      text-align: center;
+    }
+
+    .portfolio-link a {
+      color: #7f5cff;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1.05rem;
+    }
+
+    .contact {
+      text-align: center;
+    }
+
+    .contact p {
+      color: #ccc;
+      margin-bottom: 8px;
+    }
+
+    footer {
+      background: #0b0b10;
+      text-align: center;
+      padding: 30px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>Meghanath V Pramod</h1>
+    <p>Photography Enthusiast • Event Coordinator</p>
+  </div>
+</header>
+
+<section class="about">
+  <h2 class="section-title">About Me</h2>
+  <p>
+    I am a photography enthusiast with a strong interest in capturing events, portraits, and lifestyle moments, focusing on clean visuals, natural tones, and cinematic composition.<br><br>
+
+    <strong>Freelancing Experience:</strong> Volunteer photographer and event coordinator at <em>Million Dreams</em> with 1+ year of hands-on experience in event coverage and coordination.<br><br>
+
+    <strong>City:</strong> Bengaluru, India<br><br>
+
+    <strong>Editing Experience:</strong> Adobe Lightroom and Adobe Premiere Pro for color correction, retouching, and basic video edits.
+  </p>
+</section>
+
+<section class="portfolio">
+  <h2 class="section-title">Photography Works</h2>
+
+  <div class="grid">
+    <div class="photo-card">
+      <img src="images/monkey_portrait.jpg" alt="Wildlife portrait">
+      <div class="overlay"><span>Wildlife / Portrait</span></div>
+    </div>
+
+    <div class="photo-card">
+      <img src="images/street_portrait.jpg" alt="Street portrait">
+      <div class="overlay"><span>Street Portrait</span></div>
+    </div>
+
+    <div class="photo-card">
+      <img src="images/cat_closeup.jpg" alt="Animal close-up">
+      <div class="overlay"><span>Animal Close-up</span></div>
+    </div>
+
+    <div class="photo-card">
+      <img src="images/event_action.jpg" alt="Event photography">
+      <div class="overlay"><span>Event Coverage</span></div>
+    </div>
+
+    <div class="photo-card">
+      <img src="images/race_action.jpg" alt="Race photography">
+      <div class="overlay"><span>Race / Sports Action</span></div>
+    </div>
+
+    <div class="photo-card">
+      <img src="images/man_portrait.jpg" alt="Portrait">
+      <div class="overlay"><span>Portrait</span></div>
+    </div>
+
+    <div class="photo-card">
+      <img src="images/night_architecture.jpg" alt="Architecture night">
+      <div class="overlay"><span>Architecture / Night</span></div>
+    </div>
+
+    <div class="photo-card">
+      <img src="images/landscape_hills.jpg" alt="Landscape">
+      <div class="overlay"><span>Landscape</span></div>
+    </div>
+
+    <div class="photo-card">
+      <img src="images/silhouette_sunset.jpg" alt="Silhouette sunset">
+      <div class="overlay"><span>Silhouette / Storytelling</span></div>
+    </div>
+
+    <div class="photo-card">
+      <img src="images/portrait_bw.jpg" alt="Black and white portrait">
+      <div class="overlay"><span>Black & White Portrait</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio-link">
+  <h2 class="section-title">Full Portfolio</h2>
+  <p style="max-width:720px; margin: auto; color:#ccc;">
+    A curated selection is shown above. View my complete photography and video works below.
+  </p>
+  <p style="margin-top:15px;">
+    <a href="https://drive.google.com/drive/folders/1MxIH9Xbao7vRJuvxI5RElpH7URT9j41-?usp=sharing" target="_blank">
+      View Full Portfolio on Google Drive →
+    </a>
+  </p>
+</section>
+
+<section class="contact">
+  <h2 class="section-title">Contact</h2>
+  <p>Email: meghanath4002@gmail.com</p>
+  <p>Location: Bengaluru, India</p>
+</section>
+
+<footer>
+  © 2026 Meghanath V Pramod • Photography Portfolio
+</footer>
+
+</body>
+</html>
